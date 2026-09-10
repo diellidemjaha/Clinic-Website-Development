@@ -1,0 +1,393 @@
+/* --------------------------------
+   General Styles
+--------------------------------- */
+
+:root {
+    --primary-color: #1479c9;
+    --primary-dark: #0b5fa5;
+    --dark-blue: #12304a;
+    --light-blue: #eef8ff;
+    --text-color: #34495e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+
+/* --------------------------------
+   Navigation
+--------------------------------- */
+
+.navbar-brand {
+    color: var(--dark-blue);
+    font-size: 1.3rem;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-color);
+}
+
+.nav-link {
+    color: #455a64;
+    font-weight: 500;
+    margin-left: 0.4rem;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+
+/* --------------------------------
+   Hero Section
+--------------------------------- */
+
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #f4fbff 0%,
+        #ffffff 100%
+    );
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    color: var(--dark-blue);
+    line-height: 1.15;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    padding: 15px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(18, 48, 74, 0.12);
+}
+
+.hero-card {
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 22px;
+    border-radius: 15px;
+    max-width: 280px;
+}
+
+.icon-circle {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+/* --------------------------------
+   Shared Section Styles
+--------------------------------- */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-heading {
+    max-width: 650px;
+}
+
+.section-label {
+    display: inline-block;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+
+/* --------------------------------
+   Services
+--------------------------------- */
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid #e8eef2;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(18, 48, 74, 0.08);
+}
+
+.service-card h5 {
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.service-icon {
+    width: 58px;
+    height: 58px;
+    background-color: var(--light-blue);
+    color: var(--primary-color);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+/* --------------------------------
+   Doctors
+--------------------------------- */
+
+.doctor-card {
+    overflow: hidden;
+    border-radius: 16px !important;
+}
+
+.doctor-card img {
+    height: 320px;
+    object-fit: cover;
+}
+
+.doctor-card .card-title {
+    color: var(--dark-blue);
+}
+
+
+/* --------------------------------
+   Appointment
+--------------------------------- */
+
+.appointment-section {
+    background-color: var(--light-blue);
+}
+
+.appointment-box {
+    border: 1px solid #e4f0f7;
+}
+
+.form-label {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    min-height: 48px;
+    border-color: #d9e3e9;
+    border-radius: 9px;
+}
+
+textarea.form-control {
+    min-height: 120px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(20, 121, 201, 0.12);
+}
+
+
+/* --------------------------------
+   Contact
+--------------------------------- */
+
+.contact-card {
+    height: 100%;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border: 1px solid #e8eef2;
+    border-radius: 16px;
+}
+
+.contact-card h6 {
+    color: var(--dark-blue);
+    margin: 15px 0 10px;
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.map-placeholder {
+    min-height: 280px;
+    border-radius: 18px;
+    background:
+        linear-gradient(
+            rgba(238, 248, 255, 0.9),
+            rgba(238, 248, 255, 0.9)
+        ),
+        repeating-linear-gradient(
+            45deg,
+            #dceef8,
+            #dceef8 10px,
+            #eef8ff 10px,
+            #eef8ff 20px
+        );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* --------------------------------
+   Footer
+--------------------------------- */
+
+.footer {
+    background-color: var(--dark-blue);
+    padding: 55px 0 25px;
+}
+
+.footer h5,
+.footer h6 {
+    font-weight: 700;
+}
+
+.footer-links li {
+    margin-bottom: 7px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+
+/* --------------------------------
+   Responsive Adjustments
+--------------------------------- */
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 70px 0;
+    }
+
+    .hero-image {
+        height: 450px;
+    }
+
+    .hero-card {
+        left: 25px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .hero-section {
+        padding: 55px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        height: 380px;
+    }
+
+    .hero-card {
+        position: relative;
+        left: 0;
+        bottom: auto;
+        margin: -50px auto 0;
+        z-index: 2;
+    }
+
+    .doctor-card img {
+        height: 360px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-section h1 {
+        font-size: 2.15rem;
+    }
+
+    .hero-image-wrapper {
+        padding: 0;
+    }
+
+    .hero-image {
+        height: 330px;
+        border-radius: 20px;
+    }
+
+    .hero-card {
+        max-width: 90%;
+    }
+
+    .section-padding {
+        padding: 55px 0;
+    }
+}
